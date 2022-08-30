@@ -1,0 +1,8 @@
+.DS_Store
+.isolated-storage/
+.mono/
+clash/
+zshell/.zsh_sessions/
+zshell/.zcompdump
+zshell/.zsh_history
+thefuck/__pycache__/
