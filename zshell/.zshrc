@@ -3,6 +3,7 @@ bindkey -v
 #zmodload zsh/zprof
 #alias tt="\time zsh -i -c exit"
 eval "$(starship init zsh)"
+eval "$(jump shell)"
 
 # Change cursor shape for different vi modes.
 function zle-keymap-select {
