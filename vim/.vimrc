@@ -113,4 +113,4 @@ vnoremap $e <esc>`>a"<esc>`<i"<esc>
 " 括号自动生成
 
 "=====================================================
-set viminfo+=n~/.config/vim/.viminfo
+set viminfo+=n~/.local/state/vim/viminfo
