@@ -1,0 +1,14 @@
+[user]
+	name = zhouzh2
+	email = zhouzh2@hotmail.com
+[core]
+	editor = code --wait
+	autocrlf = input
+[diff]
+	tool = vscode
+[difftool "vscode"]
+	cmd = "code --wait --diff $LOCAL $REMOTE"
+[mergetool]
+	prompt = false
+[safe]
+	directory = /Users/angryangus/.config

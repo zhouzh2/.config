@@ -7,3 +7,4 @@ zshell/.zcompdump
 zshell/.zsh_history
 thefuck/__pycache__/
 */*viminfo
+less/history
