@@ -12,3 +12,5 @@
 	prompt = false
 [safe]
 	directory = /Users/angryangus/.config
+[alias]
+	lgraph = log --all --decorate --oneline --graph

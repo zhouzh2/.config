@@ -5,6 +5,8 @@ bindkey -v
 eval "$(starship init zsh)"
 eval "$(jump shell)"
 
+setopt correct
+
 # Change cursor shape for different vi modes.
 function zle-keymap-select {
   if [[ ${KEYMAP} == vicmd ]] ||
