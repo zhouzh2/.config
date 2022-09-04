@@ -42,6 +42,9 @@ set noexpandtab
 set number
 " 显示行号
 
+set relativenumber
+" 显示相对行号
+
 set history=50
 " 历史纪录数
 
@@ -95,6 +98,16 @@ set wildmenu
 
 set linespace=2
 " 字符间插入的像素行数目
+
+" This setting makes search case-insensitive when all characters in the string
+" being searched are lowercase. However, the search becomes case-sensitive if
+" it contains any capital letters. This makes searching more convenient.
+set ignorecase
+set smartcase
+
+" Enable mouse support. You should avoid relying on this too much, but it can
+" sometimes be convenient.
+set mouse+=a
 
 set whichwrap=b,s,<,>,[,]
 " 开启 Normal 或 Visual 模式下 Backspace 键，空格键，左方向键，右方向键，Insert 或 replace 模式下左方向键，右方向键跳行的功能。
