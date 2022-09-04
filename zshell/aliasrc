@@ -1,6 +1,17 @@
+alias grep="grep --color=auto"
+
+#exa magic
 alias ls="exa --icons --color=automatic --color-scale --classify"
 alias ll="pwd;exa --icons --color=automatic --color-scale --classify --group-directories-first --header -l"
+
+#bat magic
 alias cat="bat --theme=\$(defaults read -globalDomain AppleInterfaceStyle &> /dev/null && echo default || echo GitHub)"
-alias grep="grep --color=auto"
+
+
+#clean $home for vim
 alias vi="vi -u ~/.config/vim/.vimrc"
 alias vim="vim -u ~/.config/vim/.vimrc"
+
+#interactive move and copy
+alias mv="mv -i"
+alias cp="cp -i"
