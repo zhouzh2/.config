@@ -59,7 +59,7 @@ set encoding=utf-8
 set fileencodings=utf-8,ucs-bom,shift-jis,gb18030,gbk,gb2312,cp936,utf-16,big5,euc-jp,latin1
 " 编码设置
 
-colorscheme torte
+colorscheme tokyonight
 " 设置颜色主题
 
 "set guifont=Menlo:h16:cANSI
