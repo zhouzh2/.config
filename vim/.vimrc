@@ -29,10 +29,27 @@ set packpath+=~/.config/vim,~/.config/vim/after
 " }}}
 
 " Plugins {{{
+" Automatic vim-plug installation -> Place the following code in your .vimrc before plug#begin() call
+let data_dir = has('nvim') ? stdpath('data') . '/site' : '~/.config/vim'
+if empty(glob(data_dir . '/autoload/plug.vim'))
+  silent execute '!curl -fLo '.data_dir.'/autoload/plug.vim --create-dirs  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
+
+" Call Plugins
+call plug#begin('~/.config/vim/plugged')
+Plug 'sheerun/vim-polyglot'
+Plug 'vim-airline/vim-airline'
+Plug 'ghifarit53/tokyonight-vim'
+call plug#end()
 " }}}
 
 " Colors {{{
 syntax on " 语法高亮
+set termguicolors
+let g:tokyonight_style = 'night' " available: night, storm
+let g:tokyonight_enable_italic = 1
+let g:airline_theme = "tokyonight"
 colorscheme tokyonight " 设置颜色主题
 "set guifont=Menlo:h16:cANSI " 设置字体
 " }}}
@@ -114,6 +131,7 @@ set undodir=~/.local/state/vim/undodir
 set undofile " 非易失性undo
 set wildmenu " 增强模式中的命令行自动完成操作
 set wildmode=longest,list,full " 启用自动完成 ctrl+n
+let g:airline#extensions#tabline#enabled = 1
 " }}}
 
 " Airline {{{
