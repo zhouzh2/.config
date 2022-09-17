@@ -6,3 +6,4 @@ zshell/.zsh_sessions/
 zshell/.zcompdump
 zshell/.zsh_history
 thefuck/__pycache__/
+vim/plugged/
