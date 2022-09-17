@@ -7,11 +7,6 @@ alias ll="pwd;exa --icons --color=automatic --color-scale --classify --group-dir
 #bat magic
 alias cat="bat --theme=\$(defaults read -globalDomain AppleInterfaceStyle &> /dev/null && echo default || echo GitHub)"
 
-
-#clean $home for vim
-alias vi="vi -u ~/.config/vim/.vimrc"
-alias vim="vim -u ~/.config/vim/.vimrc"
-
 #interactive move and copy
 alias mv="mv -i"
 alias cp="cp -i"

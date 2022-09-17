@@ -16,6 +16,18 @@ au BufWrite /private/etc/pw._ set nowritebackup nobackup
 let skip_defaults_vim=1
 " }}}
 
+" VIMRC {{{
+set exrc " look for custom .vimrc on each folder
+set viminfo+=n~/.local/state/vim/viminfo
+set directory=.,~/.cache/vim/swap// 
+set backupdir=.,~/.local/share/vim/backup//
+" if a directory ends in two path separators "//" 
+" the swap file name will be built from the complete path to the file
+" with all path separators replaced by percent '%' signs
+set runtimepath+=~/.config/vim,~/.config/vim/after
+set packpath+=~/.config/vim,~/.config/vim/after
+" }}}
+
 " Plugins {{{
 " }}}
 
@@ -126,11 +138,6 @@ nnoremap ,html :-1read $HOME/.config/vim/snippets/examples.html<CR>3jwf>a
 " 自定义自动化 {{{
 autocmd VimEnter * silent exec "! echo -ne '\e[1 q'"
 autocmd VimLeave * silent exec "! echo -ne '\e[5 q'"  " 修复zsh vim模式下vim不显示块光标的问题
-" }}}
-
-" VIMRC {{{
-set exrc " look for custom .vimrc on each folder
-set viminfo+=n~/.local/state/vim/viminfo
 " }}}
 
 " vim:foldmethod=marker:foldlevel=0
