@@ -131,6 +131,8 @@ set undodir=~/.local/state/vim/undodir
 set undofile " 非易失性undo
 set wildmenu " 增强模式中的命令行自动完成操作
 set wildmode=longest,list,full " 启用自动完成 ctrl+n
+" set spell
+" set spelllang=en_us,zh-CN
 " }}}
 
 " Airline {{{
