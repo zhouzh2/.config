@@ -7,3 +7,6 @@ zshell/.zcompdump
 zshell/.zsh_history
 thefuck/__pycache__/
 vim/plugged/
+pudb/pudb.cfg
+zed/keymap.json
+zed/settings.json
